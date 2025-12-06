@@ -1,0 +1,100 @@
+.content {
+  width: 100%;
+  max-width: 900px;      /* limite de largura */
+  margin: 0 auto;        /* centraliza horizontalmente */
+  padding: 40px 20px 60px; /* padding menor e responsivo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;    /* centraliza elementos internos */
+  box-sizing: border-box;
+  margin-left: 350px;
+}
+
+/* Cabeçalho do elemento */
+.element-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.symbol {
+  font-size: clamp(60px, 10vw, 90px);
+  font-weight: bold;
+  color: #ff1e1e;
+}
+
+.name {
+  font-size: clamp(18px, 2.5vw, 26px);
+  color: #ccc;
+  margin-top: 10px;
+}
+
+/* Seções */
+.section-block {
+  width: 100%;           /* ocupa toda a largura do container */
+  max-width: 800px;      /* evita que fique muito largo */
+  background: #1e1e1e;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.4);
+}
+
+/* Linhas de info */
+.info-linha {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px 16px;
+  gap: 10px;
+  margin-bottom: 10px;
+  background-color: #2a2a2a;
+  border-radius: 6px;
+}
+
+/* Linhas de info */
+.info-linha2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px 16px;
+  gap: 10px;
+  margin-bottom: 10px;
+  background-color: #2a2a2a;
+  border-radius: 6px;
+}
+
+.info-linha::after {
+  content: "";
+  position: absolute;
+  top: 15%;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  background-color: #ff1e1e;
+  border-radius: 1px;
+  z-index: 10;
+}
+
+.info-linha p {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  padding: 0 10px;
+  word-break: break-word;
+  font-size: clamp(14px, 1.8vw, 17px);
+  color: #e0e0e0;
+}
+
+/* Links */
+.info-linha a {
+  color: #ff4d4d;
+  text-decoration: none;
+}
+
+.info-linha a:hover {
+  text-decoration: underline;
+  color: #ff7878;
+}
